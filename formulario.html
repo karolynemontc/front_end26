@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Formulário</title>
+    </head>
+    <body>
+        <h1>Formulário de inscrição</h1>
+        <p>Formulário para cadastro de novos usuários.</p>
+        <form method="POST" action="contato.html">
+            <div>
+                <label>Nome:</label>
+                <input type="text" name="nome"/>
+            </div>
+            <div>
+                <label>E-mail:</label>
+                <input type="email" name="e-mail" required/>
+            </div>
+            <div>
+                <label>CPF:</label>
+                <input type="text" name="cpf" minlength="11" maxlength="14"/>
+            </div>
+            <div>
+                <label>Telefone:</label>
+                <input type="text" name="telefone"/>
+            </div>
+            <div>
+                <label>Data de nascimento:</label>
+                <input type="date" name="data_nascimento"/>
+            </div>
+            <div>
+                <p>Escolha seu sexo:</p>
+                <input type="radio" name="sexo_feminino"/>
+                <label>Feminino</label>
+                <input type="radio" name="sexo_masculino"/>
+                <label>Masculino</label>
+            </div>
+
+            <div>
+                <fieldset>
+                    <legend>Escolha uma opção:</legend>
+                    <input type="checkbox" name="escolhaumaopcao"/>
+                    <label>Opção 1</label>
+                </fieldset>
+            </div>
+
+            <div>
+                <label>Escolha uma disciplina:</label>
+                <select name="disciplina">
+                 <option value="">Escolha uma opção</option>
+                    <option>Programação I</option>
+                    <option>Arquitetura II</option>
+                </select>
+            </div>
+            <div>
+                <label>Mensagem:</label>
+                <textarea name="Mensagem"></textarea>
+            </div>
+            <div>
+                <label>Login:</label>
+                <input type="text" name="login">
+            </div>
+            <div>
+                <label>Senha:</label>
+                <input type="password" name="senha"/>
+            </div>
+            <div>
+                <input type="submit" value="Enviar"/>
+                <input type="submit" value="Limpar"/>
+            </div>
+
+            
+        </form>
+
+
+    </body>
+
+
+</html>
